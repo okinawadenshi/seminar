@@ -1372,45 +1372,148 @@
 </style>
 
 <!-- 講師紹介セクション -->
-<section class="trainers">
-    <div class="container">
-        <h2>エンパワーメントのガイド役</h2>
-        <div class="trainer-cards">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エンパワーメントリーダーシップ研修 | 株式会社沖縄電子</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-blue: #1e50a2;
+            --secondary-blue: #4682b4;
+            --accent-yellow: #ffd700;
+            --light-blue: #e6f2ff;
+            --dark-blue: #0d326b;
+            --white: #ffffff;
+            --light-gray: #f5f5f5;
+            --text-dark: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: var(--primary-blue);
+            text-align: center;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--accent-yellow);
+            margin: 15px auto;
+        }
+        
+        /* 講師紹介セクション修正版 */
+        .trainers {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .trainer-card {
+            max-width: 500px;
+            background-color: var(--light-blue);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+        
+        .trainer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .trainer-image {
+            height: 400px; /* 縦長にする */
+            overflow: hidden;
+        }
+        
+        .trainer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .trainer-card:hover .trainer-image img {
+            transform: scale(1.05);
+        }
+        
+        .trainer-info {
+            padding: 30px;
+        }
+        
+        .trainer-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--accent-yellow);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        .trainer-title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .trainer-bio {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- 講師紹介セクション（1人バージョン） -->
+    <section class="trainers">
+        <div class="container">
+            <h2>エンパワーメントのガイド役</h2>
             <div class="trainer-card">
                 <div class="trainer-image">
+                    <!-- ここで伊藤 亮さんの画像を使用 -->
                     <img src="ito.png" alt="伊藤 亮">
                 </div>
                 <div class="trainer-info">
                     <h3 class="trainer-name">伊藤 亮</h3>
                     <p class="trainer-title">マインドバンク代表 / 経営企画室 室長</p>
-                    <p class="trainer-bio">1987年生まれ。神奈川県出身。北海道大学水産学部卒業。留学経験を持ち、自転車で北海道〜西の旅を満喫。約8000人との人の出会いを通して、人には「能力的な成長」と「意識の変容」の2つがあることを痛感し、古代の叡智である「老子道徳経」の探求に没頭。</p>
-                </div>
-            </div>
-            
-            <div class="trainer-card">
-                <div class="trainer-image">
-                    <img src="taguchi.jpg" alt="田口 良子">
-                </div>
-                <div class="trainer-info">
-                    <h3 class="trainer-name">田口 良子</h3>
-                    <p class="trainer-title">マインドバンクトレーナー / 対話の木の実ファシリテーター</p>
-                    <p class="trainer-bio">1978年生まれ。神奈川県出身。「どんな声や感情も含めたものとして大切にする」という対話の在り方を目指し、対話の学びと気づきの道を模索している。クライアントの中の前向いエネルギーが立ち上がり、人生が動き出す気づきの瞬間を生み出すサポートをしている。</p>
-                </div>
-            </div>
-            
-            <div class="trainer-card">
-                <div class="trainer-image">
-                    <img src="sakumoto.jpeg" alt="佐久本 万里子">
-                </div>
-                <div class="trainer-info">
-                    <h3 class="trainer-name">佐久本 万里子</h3>
-                    <p class="trainer-title">マインドバンクトレーナー / マインドフルネス担当</p>
-                    <p class="trainer-bio">1981年生まれ。沖縄県出身。カンザス留学中に重く辛い境遇に遭遇する。導かれるように出会った瞑想やマインドフルネスに救われた経験から現在マインドフルネスの実践と習慣化を通して、一人ひとりの幸福感と幸福度向上に集点を当てた活動をしている。</p>
+                    <p class="trainer-bio">1987年生まれ。神奈川県出身。北海道大学水産学部卒業。留学経験を持ち、自転車で北海道〜西の旅を満喫。約8000人との人の出会いを通して、人には「能力的な成長」と「意識の変容」の2つがあることを痛感し、古代の叡智である「老子道徳経」の探求に没頭。<br><br>エンパワーメントリーダーシップのスペシャリストとして、多くの企業や組織での研修・コンサルティングを手がけ、参加者からは「深い気づきが得られた」「組織の課題が明確になった」という声を多く頂いています。</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</body>
+</html>
 
 <!-- 講師紹介セクション用CSS -->
 <style>
