@@ -1371,7 +1371,7 @@
     }
 </style>
 <!-- YouTube動画セクション -->
-<section class="container" style="text-align: center; padding: 60px 0;">
+<section class="container" style="text-align=center; padding: 60px 0;">
     <h2>動画でわかるエンパワーメント</h2>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe src="https://www.youtube.com/embed/9c1WjeESHD0" 
